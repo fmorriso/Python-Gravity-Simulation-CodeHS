@@ -13,8 +13,8 @@
 """
 import platform
 import sys
-import tkinter
 #
+import tkinter
 from tkinter import *
 import random
 import time
@@ -22,6 +22,9 @@ import time
 from settings import Settings
 
 settings = Settings()
+
+SCALED_WIDTH = settings.scaled_width # 475
+SCALED_HEIGHT = settings.scaled_height #  275
 
 WIDTH = settings.scaled_width # 475
 HEIGHT = settings.scaled_height #  275
@@ -31,7 +34,28 @@ STARTING_X = 50
 GRAVITY_ACCELERATION = 4
 ANIMATION_DELAY = 0.050
 
+
+def center_window(window):
+    window.update_idletasks()
+    width = SCALED_WIDTH  # window.winfo_width()
+    height = SCALED_HEIGHT  # window.winfo_height()
+    screen_width = SCALED_WIDTH  # window.winfo_screenwidth()
+    screen_height = SCALED_HEIGHT  # window.winfo_screenheight()
+    x = (screen_width - width) // 2
+    y = (screen_height - height) // 2
+    window.geometry(f"{width}x{height}+{x}+{y}")
+
+
+def get_python_version() -> str:
+    return f'{sys.version_info.major}.{sys.version_info.minor}.{sys.version_info.micro}'
+
+def get_tkinter_version() -> str:
+    return f'{tkinter.TkVersion}'
+
 root = Tk()
+title = f'Gravity Simulation using Python {get_python_version()} and Tkinter {get_tkinter_version()}'
+root.title(title)
+center_window(root)
 screen = Canvas(root, width=WIDTH, height=HEIGHT, background="white")
 screen.pack()
 
