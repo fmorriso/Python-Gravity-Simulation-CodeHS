@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d4947f1-7a39-438e-ac03-7c928b7ea154" name="Changes" comment="show python and tkinter versions being used when running">
+    <list default="true" id="3d4947f1-7a39-438e-ac03-7c928b7ea154" name="Changes" comment="Fix window scaling and centering">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +94,8 @@
       <workItem from="1730583795913" duration="1636000" />
       <workItem from="1730648843370" duration="260000" />
       <workItem from="1730649167778" duration="304000" />
-      <workItem from="1730651821149" duration="3007000" />
+      <workItem from="1730651821149" duration="4712000" />
+      <workItem from="1730673497716" duration="304000" />
     </task>
     <task id="LOCAL-00001" summary="add PyCharm files and directories">
       <option name="closed" value="true" />
@@ -121,7 +121,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730649461861</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fix window scaling and centering">
+      <option name="closed" value="true" />
+      <created>1730655319904</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1730655319904</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,20 +139,10 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="add PyCharm files and directories" />
     <MESSAGE value="show python and tkinter versions being used when running" />
-    <option name="LAST_COMMIT_MESSAGE" value="show python and tkinter versions being used when running" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>62</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Fix window scaling and centering" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix window scaling and centering" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Gravity_Simulation_CodeHS$main.coverage" NAME="main Coverage Results" MODIFIED="1730654942952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Gravity_Simulation_CodeHS$main.coverage" NAME="main Coverage Results" MODIFIED="1730656134717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

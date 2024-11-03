@@ -21,13 +21,8 @@ import time
 
 from settings import Settings
 
-settings = Settings()
+settings = Settings(2.0 / 3.0)
 
-SCALED_WIDTH = settings.scaled_width  # 475
-SCALED_HEIGHT = settings.scaled_height  # 275
-
-WIDTH = settings.scaled_width  # 475
-HEIGHT = settings.scaled_height  # 275
 BALL_DIAMETER = settings.scaled_height * 0.10  # 50
 STARTING_Y = 50
 STARTING_X = 50
@@ -39,9 +34,8 @@ def center_window(window):
     window.update_idletasks()
     print(f'{window.winfo_width()=}, {window.winfo_height()=}')
     print(f'{window.winfo_screenwidth()=}, {window.winfo_screenheight()=}')
-    print(f'{SCALED_WIDTH=}, {SCALED_HEIGHT=}')
-    width = SCALED_WIDTH  # window.winfo_width()
-    height = SCALED_HEIGHT  # window.winfo_height()
+    width = settings.scaled_width  # window.winfo_width()
+    height = settings.scaled_height  # window.winfo_height()
 
     screen_width = window.winfo_screenwidth()
     screen_height = window.winfo_screenheight()
@@ -66,11 +60,11 @@ root: tkinter.Tk = Tk()
 title = f'Gravity Simulation using Python {get_python_version()} and Tkinter {get_tkinter_version()}'
 root.title(title)
 center_window(root)
-screen = Canvas(root, width = WIDTH, height = HEIGHT, background = "white")
+screen = Canvas(root, width = settings.scaled_width, height = settings.scaled_height, background = "white")
 screen.pack()
 
 # Create Ball
-ball = screen.create_oval(STARTING_X, STARTING_Y, \
+ball = screen.create_oval(STARTING_X, STARTING_Y,
                           STARTING_X + BALL_DIAMETER, STARTING_Y + BALL_DIAMETER, fill = "black")
 
 # Initializes the velocity for the ball
@@ -83,22 +77,22 @@ def check_for_bounce():
     global velocity_x, velocity_y
     # Returns x1, y1, x2, y2
     ball_pos = screen.coords(ball)
-    if ball_pos[2] >= WIDTH:
+    if ball_pos[2] >= settings.scaled_width:
         velocity_x *= -1
-        screen.coords(ball, WIDTH - BALL_DIAMETER, ball_pos[1], \
-                      WIDTH, ball_pos[3])
+        screen.coords(ball, settings.scaled_width - BALL_DIAMETER, ball_pos[1],
+                      settings.scaled_width, ball_pos[3])
     if ball_pos[0] <= 0:
         velocity_x *= -1
-        screen.coords(ball, 0, ball_pos[1], \
+        screen.coords(ball, 0, ball_pos[1],
                       BALL_DIAMETER, ball_pos[3])
-    if ball_pos[3] >= HEIGHT:
+    if ball_pos[3] >= settings.scaled_height:
         velocity_y = -1 * abs(velocity_y)
-        screen.coords(ball, ball_pos[0], HEIGHT - BALL_DIAMETER, \
-                      ball_pos[2], HEIGHT)
+        screen.coords(ball, ball_pos[0], settings.scaled_height - BALL_DIAMETER,
+                      ball_pos[2], settings.scaled_height)
 
     if ball_pos[1] <= 0:
         velocity_y *= -1
-        screen.coords(ball, ball_pos[0], 0, \
+        screen.coords(ball, ball_pos[0], 0,
                       ball_pos[2], BALL_DIAMETER)
     screen.update()
 
