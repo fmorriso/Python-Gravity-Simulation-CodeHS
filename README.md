@@ -15,6 +15,7 @@ I augmented the original CodeHS code with some scaling based on device size usin
 ## References
 
 * [CodeHS exercise 7.5.2 Gravity Simulation](https://codehs.com/student/5441708/section/556234/assignment/139751296)
+* [Tkinter Tutorial](https://www.pythontutorial.net/tkinter/)
 
 ## Change History
 
