@@ -32,11 +32,12 @@ ANIMATION_DELAY = 0.050
 
 
 def center_window(window):
+    """Center the Tkinter window in the middle of the screen using scale factor."""
     window.update_idletasks()
     print(f'{window.winfo_width()=}, {window.winfo_height()=}')
     print(f'{window.winfo_screenwidth()=}, {window.winfo_screenheight()=}')
-    width = settings.scaled_width  # window.winfo_width()
-    height = settings.scaled_height  # window.winfo_height()
+    width = settings.scaled_width
+    height = settings.scaled_height
 
     screen_width = window.winfo_screenwidth()
     screen_height = window.winfo_screenheight()
