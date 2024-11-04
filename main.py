@@ -22,6 +22,7 @@ import time
 from settings import Settings
 
 settings = Settings(2.0 / 3.0)
+print(f'{settings=}')
 
 BALL_DIAMETER = settings.scaled_height * 0.10  # 50
 STARTING_Y = 50

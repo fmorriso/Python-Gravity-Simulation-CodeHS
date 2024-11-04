@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d4947f1-7a39-438e-ac03-7c928b7ea154" name="Changes" comment="Fix window scaling and centering">
+    <list default="true" id="3d4947f1-7a39-438e-ac03-7c928b7ea154" name="Changes" comment="remove unused window sizing variables">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +94,7 @@
       <workItem from="1730648843370" duration="260000" />
       <workItem from="1730649167778" duration="304000" />
       <workItem from="1730651821149" duration="4712000" />
-      <workItem from="1730673497716" duration="304000" />
+      <workItem from="1730673497716" duration="573000" />
     </task>
     <task id="LOCAL-00001" summary="add PyCharm files and directories">
       <option name="closed" value="true" />
@@ -129,7 +128,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730655319904</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="remove unused window sizing variables">
+      <option name="closed" value="true" />
+      <created>1730673951959</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1730673951959</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,9 +147,10 @@
     <MESSAGE value="add PyCharm files and directories" />
     <MESSAGE value="show python and tkinter versions being used when running" />
     <MESSAGE value="Fix window scaling and centering" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix window scaling and centering" />
+    <MESSAGE value="remove unused window sizing variables" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove unused window sizing variables" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Gravity_Simulation_CodeHS$main.coverage" NAME="main Coverage Results" MODIFIED="1730656134717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Gravity_Simulation_CodeHS$main.coverage" NAME="main Coverage Results" MODIFIED="1730673681350" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
