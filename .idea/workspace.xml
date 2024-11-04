@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d4947f1-7a39-438e-ac03-7c928b7ea154" name="Changes" comment="remove unused window sizing variables">
+    <list default="true" id="3d4947f1-7a39-438e-ac03-7c928b7ea154" name="Changes" comment="update Settings str and repr methods">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +42,7 @@
     &quot;Python.main.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -95,6 +97,9 @@
       <workItem from="1730649167778" duration="304000" />
       <workItem from="1730651821149" duration="4712000" />
       <workItem from="1730673497716" duration="573000" />
+      <workItem from="1730725604034" duration="305000" />
+      <workItem from="1730725994829" duration="5000" />
+      <workItem from="1730732971693" duration="900000" />
     </task>
     <task id="LOCAL-00001" summary="add PyCharm files and directories">
       <option name="closed" value="true" />
@@ -136,7 +141,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730673951959</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="update Settings str and repr methods">
+      <option name="closed" value="true" />
+      <created>1730725853173</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1730725853173</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,9 +161,10 @@
     <MESSAGE value="show python and tkinter versions being used when running" />
     <MESSAGE value="Fix window scaling and centering" />
     <MESSAGE value="remove unused window sizing variables" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove unused window sizing variables" />
+    <MESSAGE value="update Settings str and repr methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="update Settings str and repr methods" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Gravity_Simulation_CodeHS$main.coverage" NAME="main Coverage Results" MODIFIED="1730673681350" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Gravity_Simulation_CodeHS$main.coverage" NAME="main Coverage Results" MODIFIED="1730725821286" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
