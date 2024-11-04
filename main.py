@@ -21,7 +21,7 @@ import time
 
 from settings import Settings
 
-settings = Settings(2.0 / 3.0)
+settings = Settings(6.0 / 10)
 print(f'{settings=}')
 
 BALL_DIAMETER = settings.scaled_height * 0.10  # 50
@@ -34,14 +34,15 @@ ANIMATION_DELAY = 0.050
 def center_window(window):
     """Center the Tkinter window in the middle of the screen using scale factor."""
     window.update_idletasks()
-    print(f'{window.winfo_width()=}, {window.winfo_height()=}')
-    print(f'{window.winfo_screenwidth()=}, {window.winfo_screenheight()=}')
+    # print(f'{window.winfo_width()=}, {window.winfo_height()=}')
+    # print(f'{window.winfo_screenwidth()=}, {window.winfo_screenheight()=}')
     width = settings.scaled_width
     height = settings.scaled_height
 
-    screen_width = window.winfo_screenwidth()
-    screen_height = window.winfo_screenheight()
+    screen_width = settings.device_width #window.winfo_screenwidth()
+    screen_height = settings.device_height #window.winfo_screenheight()
     print(f'{screen_width=}, {screen_height=}')
+
     x = (screen_width - width) // 2
     y = (screen_height - height) // 2
     window_geometry = f'{width}x{height}+{x}+{y}'
@@ -104,7 +105,7 @@ def check_for_bounce():
 # acceleration to the y velocity.
 
 def move_ball():
-    global velocity_x, velocity_y
+    global velocity_y
     screen.move(ball, velocity_x, velocity_y)
     check_for_bounce()
     velocity_y += GRAVITY_ACCELERATION
