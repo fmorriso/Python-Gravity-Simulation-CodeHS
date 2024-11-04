@@ -1,4 +1,4 @@
-# Python Gravity Simulation - CodeHS Python CSP - 7.5.2
+# Python Simulation - Bouncing Ball with Gravity  - CodeHS Python CSP - 7.5.2
 A simple Python program that simulates gravity acting on a ball.
 I augmented the original CodeHS code with some scaling based on device size using PyAutoGUI.
 
