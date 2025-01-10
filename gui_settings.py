@@ -1,6 +1,6 @@
 import pyautogui
 
-class Settings:
+class GuiSettings:
     """ A central location to store settings needed throughout this program."""
     def __init__(self, pct:float =0.75):
         # calculate game size as a percentage of device screen size

@@ -6,11 +6,11 @@ I augmented the original CodeHS code with some scaling based on device size usin
 
 | Tool        |  Version |
 |:------------|---------:|
-| Python      |   3.13.0 |
+| Python      |   3.13.1 |
 | Tkinter     |      8.6 |
 | PyAutoGUI   |   0.9.54 |
-| VSCode      |   1.95.1 |
-| PyCharm     | 2024.2.4 |
+| VSCode      |   1.96.2 |
+| PyCharm     | 2024.3.1 |
 
 ## References
 

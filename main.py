@@ -19,9 +19,9 @@ from tkinter import *
 import random
 import time
 
-from settings import Settings
+from gui_settings import GuiSettings
 
-settings = Settings(6.0 / 10)
+settings = GuiSettings(6.0 / 10)
 print(f'{settings=}')
 
 BALL_DIAMETER = settings.scaled_height * 0.10  # 50
